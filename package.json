@@ -1,0 +1,24 @@
+{
+  "name": "d-dev-validation",
+  "version": "1.0.0",
+  "description": "A nice validation inputs manager. 🎨",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "vue-cli-service serve",
+    "build": "bili --name index --plugin vue --vue.css false"
+  },
+  "files": [
+    "dist/*"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bili": "^5.0.5",
+    "rollup-plugin-vue": "^6.0.0",
+    "vue-template-compiler": "^2.6.12"
+  },
+  "dependencies": {
+    "@vue/compiler-sfc": "^3.0.5"
+  }
+}

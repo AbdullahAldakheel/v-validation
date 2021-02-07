@@ -1,0 +1,38 @@
+{
+  "001": {
+    "regex": "^.{1,}$",
+    "message": "The :attribute field is required."
+  },
+  "001.1": {
+    "regex": "^.{1,}$",
+    "message": "The :attribute Field is required."
+  },
+  "002": {
+    "regex": "^[\u0621-\u064A\u0660-\u0669 ]+$",
+    "message": "The :attribute format is invalid. Must be Arabic letters."
+  },
+  "003": {
+    "regex": "^[A-Za-z_\\s]+$",
+    "message": "The :attribute format is invalid. Must be English letters"
+  },
+  "004": {
+    "regex": "^.{0,128}$",
+    "message": "The :attribute may not be greater than 128."
+  },
+  "005": {
+    "regex": "^.{0,2048}$",
+    "message": "The :attribute may not be greater than 2048."
+  },
+  "006": {
+    "regex": "^@[a-zA-Z0-9]{0,}\\w+",
+    "message": "The :attribute should start with @."
+  },
+  "007": {
+    "regex": "^$|@[a-zA-Z0-9]{0,}\\w+",
+    "message": "The :attribute should be a correct URL."
+  },
+  "008": {
+    "regex": "^$|^.*@.*\\..*$",
+    "message": "Please enter :attribute address in format yourname@example.com."
+  }
+}
