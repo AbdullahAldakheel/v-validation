@@ -1,6 +1,6 @@
 {
   "name": "d-dev-validation",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "private": false,
   "description": "A nice validation inputs manager. 🎨",
   "main": "./dist/index.js",
