@@ -1,5 +1,5 @@
 .invalid-tooltip {
-  position: absolute;
+  position: relative;
   top: 100%;
   z-index: 5;
   display: block;

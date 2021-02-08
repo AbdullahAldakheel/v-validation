@@ -1,5 +1,5 @@
 /*!
- * d-dev-validation v1.0.4
+ * d-dev-validation v1.0.6
  * (c) 
  * Released under the MIT License.
  */
