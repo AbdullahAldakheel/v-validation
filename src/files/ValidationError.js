@@ -13,7 +13,7 @@ export default {
                 : null;
         },
         getValidationCodes(code){
-            return require('./../validationCodes.json')[code] || '';
+            return require('./validationCodes.json')[code] || '';
         },
         inputValidation(Comp){
             let [data, name, codes] = Comp;
@@ -22,6 +22,7 @@ export default {
             if(Array.isArray(data)){
                 data.length > 0 ? data = data.join() : data = '';
             }
+            console.log(codes)
             codes.forEach(code => {
                 let vc = this.getValidationCodes(code);
                 var regex = new RegExp(vc.regex);

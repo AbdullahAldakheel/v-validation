@@ -14,6 +14,7 @@ export const dValidate =  {
         let name = (binding.value[1]).replace(/\s/g, ''); + '-validation';
 
         let handler = function(e) {
+            console.log(1)
             let val = (e.srcElement.value || e.srcElement.outerText);
             if(e.srcElement.parentElement.classList[0] == 'bootstrap-tagsinput'){
                 val = '';
@@ -91,8 +92,8 @@ export const dRequire =   {
 
 import validationError from './files/ValidationError';
 
-
 export default {
+
     install(Vue, options) {
         Vue.directive('validate', dValidate);
         Vue.directive('submit', dSubmit);

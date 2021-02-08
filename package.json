@@ -1,6 +1,7 @@
 {
   "name": "d-dev-validation",
-  "version": "1.0.0",
+  "version": "1.0.3",
+  "private": false,
   "description": "A nice validation inputs manager. 🎨",
   "main": "./dist/index.js",
   "scripts": {
@@ -9,10 +10,10 @@
     "build": "bili --name index --plugin vue --vue.css false"
   },
   "files": [
-    "dist/*"
+    "./dist/*"
   ],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "bili": "^5.0.5",
     "rollup-plugin-vue": "^6.0.0",
@@ -20,5 +21,6 @@
   },
   "dependencies": {
     "@vue/compiler-sfc": "^3.0.5"
-  }
+  },
+  "repository": "AbdullahAldakheel/v-validation"
 }

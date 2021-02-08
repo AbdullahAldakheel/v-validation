@@ -1,7 +1,7 @@
 /*!
- * d-dev-validation v1.0.0
+ * d-dev-validation v1.0.3
  * (c) 
- * Released under the ISC License.
+ * Released under the MIT License.
  */
 'use strict';
 
@@ -75,7 +75,7 @@ var validationError = {
       return this.errors != null && this.errors[field] ? this.errors[field] : null;
     },
     getValidationCodes: function getValidationCodes(code) {
-      return require('./../validationCodes.json')[code] || '';
+      return require('./validationCodes.json')[code] || '';
     },
     inputValidation: function inputValidation(Comp) {
       var _this = this;
@@ -92,6 +92,7 @@ var validationError = {
         data.length > 0 ? data = data.join() : data = '';
       }
 
+      console.log(codes);
       codes.forEach(function (code) {
         var vc = _this.getValidationCodes(code);
 
@@ -176,6 +177,7 @@ var dValidate = {
     var name = binding.value[1].replace(/\s/g, '');
 
     var handler = function handler(e) {
+      console.log(1);
       var val = e.srcElement.value || e.srcElement.outerText;
 
       if (e.srcElement.parentElement.classList[0] == 'bootstrap-tagsinput') {

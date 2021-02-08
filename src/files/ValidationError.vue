@@ -16,8 +16,25 @@
     }
 </script>
 
-<style scoped>
+<style lang="scss">
+
     .form-control.is-invalid ~ div > .invalid-feedback {
         display: block;
+    }
+    .invalid-tooltip {
+        position: absolute;
+        top: 100%;
+        z-index: 5;
+        display: block;
+        max-width: 100%;
+        padding: 2px;
+        font-size: 11px;
+        line-height: 1.3;
+        color: #fff;
+        background-color: rgba($danger, 0.67);
+        border-radius: 2px;
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: 50px;
     }
 </style>
